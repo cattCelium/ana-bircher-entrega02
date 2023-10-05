@@ -171,12 +171,17 @@ progress {
     color: var(--dark-gray-color);
     padding: 12px;
     margin-left: 16PX;
-    
+    font-family: 'Montserrat', sans-serif;
     background-color:var(--white-color);
-    transition: var(--blue-color) 0.4s;
     font-size: 18px;
 }
 
+.proyects__nav__a:hover{
+    background-color: var(--blue-color);
+    transition: var(--blue-color) 0.4s;
+    color: var(--white-color);
+    border: none;
+}
 
 /*PROYECT PREVIEW SECTION*/
 
@@ -282,7 +287,7 @@ progress {
     width: 50%;
 }
 
-.experience__frame2, .experience__frame3{
+.experience__frame2{
     display: none;
 }
 
@@ -317,9 +322,19 @@ progress {
     color:var(--mid-gray-color)
 }
 
-.certifications__container__frame2, .certifications__container__frame3{
+.certifications__container__frame2{
     display: none;
 }
+
+
+/* *********JS SELECTION BUTTONS********* */
+
+.showBtn{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+}
+
 
 
 /* *********DISPLAY LAYOUT********* */
