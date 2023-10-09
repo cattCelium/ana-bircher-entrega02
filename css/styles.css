@@ -22,14 +22,13 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: var(--light-gray-color);
     padding: 16px;
-    width: 494px;
+    max-width: 462px;
+    min-width: 462px;
 }
 
 header, .skills,
 .proyects, .preview,
-.preview2, .preview3,
-.preview4, .preview5,
-.experience, .certifications{
+.preview2,.experience, .certifications{
     background-color: var(--white-color);
     padding: 16px;
     border-radius: 12px;
@@ -86,22 +85,24 @@ a:hover {
     flex-direction: column;
     gap: 24px;
     padding: 16px;
+    width: 100%;
     }
 
 .header__frameInfo__clippingMask{
-    width: 100%;
+    width: 366px;
     height: 340px;
     overflow: hidden;
     margin: auto;
     position: relative;
     border-radius: 12px;
     margin-bottom: 16px;
+    justify-content: center;
 }
 
 .header__frameInfo__clippingMask__profileImg{
     position:absolute;
     top: -12%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .header__frameInfo__contact{
@@ -112,7 +113,7 @@ a:hover {
     margin-left: 8px;
     position: absolute;
     transform: translateY(-5%);
-
+    width: 100%;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -244,14 +245,13 @@ progress {
     margin-right: 16px;
 }
 
-.preview2, .preview3,
-.preview4, .preview5{
+.preview2{
     display: none;
 }
 
 /*EXPERIENCE SECTION*/
 
-.experience__frame, .experience__frame2, .experience__frame3{
+.experience__frame, .experience__frame2{
     display: flex;
     border: 1px solid var(--gray-3, #C4C4C4);
     border-radius: var(--radius-12, 12px);
@@ -418,9 +418,7 @@ progress {
         background: var(--blue-color);
     }
 
-    .preview, .preview2,
-    .preview3, .preview4,
-    .preview5{
+    .preview, .preview2{
         width: 845px;
         display: flex;
         flex-direction: row;
@@ -440,7 +438,7 @@ progress {
     /*EXPEREINCE  SECTION*/ 
 
     .experience{
-        width: 559px;
+        max-width: 559px;
         height: 723px;
     }
 
@@ -448,10 +446,10 @@ progress {
         padding: 24px 16px 24px 16px;
     }
 
-    .experience__frame, .experience__frame2, .experience__frame3{
+    .experience__frame, .experience__frame2{
         display: flex;
         flex-direction: column;
-        width: 495px;
+        width: 100%;
         height: 188.66px;
         padding: 8px 8px 24px 8px;
         margin-bottom: 16px;
@@ -466,11 +464,11 @@ progress {
     .experience__leftFrame__tx{
         display: flex;
         flex-direction: column;
-        width: 178px;
+        max-width: 178px;
     }
 
     .experience__rightFrame{
-        width: 261px;
+        max-width: 261px;
     }
 
     .experience__rightFrame__tx{
@@ -496,8 +494,7 @@ progress {
     }
 
     .certifications__container__frame, 
-    .certifications__container__frame2, 
-    .certifications__container__frame3{
+    .certifications__container__frame2{
         display: flex;
         flex-direction: column;
         justify-content: center;
